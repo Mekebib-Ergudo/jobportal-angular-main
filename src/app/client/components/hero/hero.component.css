@@ -16,7 +16,7 @@ section h1 {
 }
 
 h1 span {
-  color: #007bff;
+  color: #d400ff;
 }
 section p {
   font-size: 18px;
@@ -43,7 +43,7 @@ section button {
 }
 
 section button {
-  background-color: #007bff;
+  background-color: #8400ff;
   color: white;
   border: none;
   padding: 10px 15px;

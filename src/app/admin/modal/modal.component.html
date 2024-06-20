@@ -1,0 +1,64 @@
+<form [formGroup]="job" class="form-wrapper">
+  <h1>Need a talent post job here?</h1>
+  <div class="input-content">
+    <div class="input-wrapper">
+      <label for="title"> Job Title </label>
+      <input id="title" formControlName="title" placeholder="Job Title" />
+    </div>
+    <div class="input-wrapper">
+      <label for="company">Company</label>
+      <input
+        id="company"
+        formControlName="company"
+        placeholder="company name"
+      />
+    </div>
+    <div class="input-wrapper">
+      <label for="location">Location</label>
+      <input
+        id="location"
+        formControlName="location"
+        placeholder="company location"
+      />
+    </div>
+    <div class="input-wrapper">
+      <label for="mode">Mode</label>
+      <select id="mode" formControlName="mode">
+        <option value="" disabled>Please select work mode</option>
+        <option value="remote">Online</option>
+        <option value="onsite">On-Person</option>
+        <option value="hybrid">Mixed</option>
+        <option value="all">All</option>
+      </select>
+    </div>
+    <div class="input-wrapper">
+      <label for="category">Category</label>
+      <select id="category" formControlName="category">
+        <option value="" disabled>Select Category</option>
+        <option value="front-end">Front End</option>
+        <option value="back-end">Back End</option>
+        <option value="full-stack">Full Stack</option>
+        <option value="all">All</option>
+      </select>
+    </div>
+    <div class="input-wrapper text-area">
+      <label for="description">description</label>
+      <textarea
+        cols="22"
+        rows="5"
+        id="description"
+        formControlName="description"
+        placeholder="Job Description"
+      ></textarea>
+    </div>
+  </div>
+  <button
+    mat-raised-button
+    type="acent"
+    class="btn"
+    (click)="data ? updateJob() : onPostJob()"
+    [disabled]="!job.valid"
+  >
+    {{ data ? "Update" : "Post" }}
+  </button>
+</form>

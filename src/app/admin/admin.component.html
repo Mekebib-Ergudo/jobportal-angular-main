@@ -1,0 +1,11 @@
+<h1>Need a talent? Post a job here!</h1>
+<button class="btn" (click)="openModal()">Post Job</button>
+<main>
+  <app-jobList
+    *ngFor="let job of jobs"
+    [job]="job"
+    [isAdmin]="true"
+    (onDelete)="deleteJob($event)"
+    (onUpdate)="updateJobModal($event)"
+  ></app-jobList>
+</main>

@@ -1,0 +1,56 @@
+section {
+  background-color: #f0f4f8; /* Elegant background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(80vh - 40px); /* Full viewport height */
+  padding: 20px;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h1 span {
+  color: #007bff;
+}
+section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+section > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+section select,
+section button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 40px;
+}
+
+section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section button:hover {
+  background-color: #0056b3;
+}

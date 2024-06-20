@@ -1,0 +1,16 @@
+<div class="login-wrapper">
+  <div class="login-content">
+    <h2>Recruiter Sign In</h2>
+    <div class="input-wrapper">
+      <label for="email">Email</label>
+      <input id="email" type="email" [(ngModel)]="email" />
+    </div>
+    <div class="input-wrapper">
+      <label for="password">Password</label>
+      <input id="password" type="password" [(ngModel)]="password" />
+    </div>
+    <div class="input-wrapper">
+      <button class="btn" (click)="onLogin()">Sign In</button>
+    </div>
+  </div>
+</div>

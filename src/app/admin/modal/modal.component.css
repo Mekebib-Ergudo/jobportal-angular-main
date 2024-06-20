@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin: 10px 0;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  background: #fff;
+  padding: 15px;
+  margin: 0px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px; /* Smaller width for better aesthetics */
+}
+
+.form-wrapper h1 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.input-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 0.85em; /* Smaller font size for labels */
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.85em; /* Smaller font size for inputs */
+  width: 100%;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper textarea::placeholder {
+  color: #aaa;
+}
+
+.input-wrapper textarea {
+  resize: vertical;
+}
+
+.text-area textarea {
+  height: auto;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  margin: 15px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .form-wrapper {
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .form-wrapper h1 {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    padding: 8px;
+  }
+}
